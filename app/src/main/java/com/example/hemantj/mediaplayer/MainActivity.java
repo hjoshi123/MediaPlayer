@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Bundle extras;
     private ArrayList<SongInfo> songs = null;
     private MediaPlayer mediaPlayer;
     private SeekBar seekBar;
@@ -79,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    class SeekThread extends Thread{
+    private class SeekThread extends Thread{
         public void run(){
             while(true){
                 try{
